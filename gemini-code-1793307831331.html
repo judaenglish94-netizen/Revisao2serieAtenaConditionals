@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditionals in Context - 2ª Série EM - Colégio Atena</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#134b79',
+              light: '#1e5f96',
+              bg: '#0c3556',
+              accent: '#38bdf8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Estilização da barra de rolagem personalizada */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #134b79;
+      border-radius: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #0c3556;
+    }
+  </style>
+</head>
+<body class="bg-brand-bg min-h-screen font-sans text-slate-800 flex flex-col justify-center items-center p-3 sm:p-6 select-none overflow-x-hidden">
+
+  <!-- Container Principal -->
+  <main class="w-full max-w-2xl flex flex-col items-center my-auto">
+
+    <!-- Quadrado Centralizado com a Logo do Colégio Atena -->
+    <div class="bg-white rounded-2xl p-4 shadow-2xl mb-4 sm:mb-6 flex items-center justify-center w-36 h-36 sm:w-44 sm:h-44 border-2 border-brand-dark/20 transition-all duration-300 transform hover:scale-105">
+      <img src="atena.png" alt="Colégio Atena Logo" class="max-w-full max-h-full object-contain">
+    </div>
+
+    <!-- Caixa do Conteúdo Principal -->
+    <div class="w-full bg-white rounded-2xl shadow-2xl border border-slate-100 flex flex-col overflow-hidden">
+      
+      <!-- PÁGINA DE ESTUDO / RESUMO GRAMATICAL -->
+      <section id="study-screen" class="flex flex-col">
+        
+        <!-- Cabeçalho Fixo -->
+        <div class="bg-slate-50 p-4 border-b border-slate-100 text-center">
+          <h1 class="text-xl sm:text-2xl font-bold text-brand-dark">Conditionals in Context</h1>
+          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">First, Second & Third Conditionals + Pontuação (Vírgulas) - 2ª Série EM</p>
+        </div>
+
+        <!-- Área de Conteúdo com Scroll -->
+        <div class="h-[54vh] sm:h-[55vh] overflow-y-auto p-4 sm:p-6 space-y-6 text-sm sm:text-base leading-relaxed custom-scrollbar">
+          
+          <!-- REGRA OURO DE PONTUAÇÃO (VÍRGULAS) -->
+          <div class="p-3.5 bg-amber-50 border-l-4 border-amber-500 rounded text-xs sm:text-sm text-amber-950 space-y-1.5">
+            <p>📌 <strong>A Regra de Ouro das Vírgulas nas Condicionais!</strong></p>
+            <p>• <strong>Com vírgula:</strong> Se a frase começa com a oração subordinada (<strong>If-clause</strong>), <u>deve haver vírgula</u> separando as orações.<br>
+            👉 <em>If you study hard, you will pass the exam.</em></p>
+            <p>• <strong>Sem vírgula:</strong> Se a oração principal (com <strong>will / would / would have</strong>) vier primeiro, <u>NÃO usaremos vírgula</u> antes do "If".<br>
+            👉 <em>You will pass the exam if you study hard.</em></p>
+          </div>
+
+          <!-- 1. FIRST CONDITIONAL -->
+          <article class="space-y-2 border-b border-slate-100 pb-5">
+            <h2 class="text-base sm:text-lg font-bold text-brand-dark flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand-dark"></span> 1. First Conditional (Possibilidades Reais no Futuro)
+            </h2>
+            <p class="text-xs sm:text-sm">Usada para situações possíveis ou prováveis no presente/futuro.</p>
+            <div class="bg-slate-50 p-3 rounded-lg space-y-2 border border-slate-200 text-xs sm:text-sm">
+              <p>• <strong>Estrutura:</strong> <span class="font-bold text-brand-dark">If + Simple Present</span> ➔ <span class="font-bold text-brand-dark">Will + Verbo Base</span></p>
+              <p class="text-emerald-800 font-semibold">• Exemplo com vírgula: <em>If it rains tomorrow, we will stay at home.</em></p>
+              <p class="text-emerald-800 font-semibold">• Exemplo sem vírgula: <em>We will stay at home if it rains tomorrow.</em></p>
+            </div>
+          </article>
+
+          <!-- 2. SECOND CONDITIONAL -->
+          <article class="space-y-2 border-b border-slate-100 pb-5">
+            <h2 class="text-base sm:text-lg font-bold text-brand-dark flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand-dark"></span> 2. Second Conditional (Hipóteses Irreais no Presente/Futuro)
+            </h2>
+            <p class="text-xs sm:text-sm">Usada para situações imaginárias, improváveis ou conselhos no presente.</p>
+            <div class="bg-slate-50 p-3 rounded-lg space-y-2 border border-slate-200 text-xs sm:text-sm">
+              <p>• <strong>Estrutura:</strong> <span class="font-bold text-brand-dark">If + Simple Past</span> ➔ <span class="font-bold text-brand-dark">Would + Verbo Base</span></p>
+              <p class="text-slate-600"><em>Lembrete: Na linguagem formal, usamos 'Were' para todos os pronomes (If I were, If he were).</em></p>
+              <p class="text-emerald-800 font-semibold">• Exemplo com vírgula: <em>If I won the lottery, I would travel the world.</em></p>
+              <p class="text-emerald-800 font-semibold">• Exemplo sem vírgula: <em>I would travel the world if I won the lottery.</em></p>
+            </div>
+          </article>
+
+          <!-- 3. THIRD CONDITIONAL -->
+          <article class="space-y-2">
+            <h2 class="text-base sm:text-lg font-bold text-brand-dark flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand-dark"></span> 3. Third Conditional (Arrependimentos / Passado Impossível)
+            </h2>
+            <p class="text-xs sm:text-sm">Usada para imaginar um resultado diferente para algo que já aconteceu no passado.</p>
+            <div class="bg-slate-50 p-3 rounded-lg space-y-2 border border-slate-200 text-xs sm:text-sm">
+              <p>• <strong>Estrutura:</strong> <span class="font-bold text-brand-dark">If + Past Perfect (had + V3)</span> ➔ <span class="font-bold text-brand-dark">Would have + Participio (V3)</span></p>
+              <p class="text-emerald-800 font-semibold">• Exemplo com vírgula: <em>If she had studied, she would have passed the test.</em></p>
+              <p class="text-emerald-800 font-semibold">• Exemplo sem vírgula: <em>She would have passed the test if she had studied.</em></p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Rodapé / Botão de Ação -->
+        <div class="p-4 border-t border-slate-100 bg-slate-50 flex justify-center">
+          <button id="start-btn" onclick="startQuiz()" class="w-full sm:w-auto px-8 py-3 bg-brand-dark hover:bg-brand-light text-white font-bold rounded-xl shadow-md transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-base">
+            Start Practice Quiz 🚀
+          </button>
+        </div>
+
+      </section>
+
+      <!-- PÁGINA DO QUIZ -->
+      <section id="quiz-screen" class="hidden flex flex-col">
+        
+        <!-- Barra de Progresso & Acesso ao Menu de Questões -->
+        <div class="bg-slate-50 p-3 sm:p-4 border-b border-slate-100 space-y-2">
+          <div class="flex justify-between items-center text-xs sm:text-sm font-semibold text-slate-600">
+            <span id="topic-badge" class="bg-brand-dark/10 text-brand-dark px-2.5 py-1 rounded-full text-xs font-bold truncate max-w-[200px] sm:max-w-none">
+              Conditionals
+            </span>
+            <div class="flex items-center gap-2">
+              <button onclick="toggleNavModal()" class="text-xs bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1">
+                📋 Navegador
+              </button>
+              <span id="question-counter" class="text-brand-dark font-bold">1 / 30</span>
+            </div>
+          </div>
+          <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+            <div id="progress-bar" class="bg-brand-dark h-full transition-all duration-300 w-0"></div>
+          </div>
+        </div>
+
+        <!-- Área da Questão com Scroll Fixo -->
+        <div class="h-[54vh] sm:h-[55vh] overflow-y-auto p-4 sm:p-6 flex flex-col justify-between custom-scrollbar">
+          
+          <div class="space-y-4">
+            <div id="question-text" class="text-xs sm:text-sm font-medium text-slate-800 leading-relaxed space-y-2 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+              <!-- Pergunta inserida via JS -->
+            </div>
+
+            <!-- Opções -->
+            <div id="options-container" class="space-y-2 pt-1">
+              <!-- Renderizado via JS -->
+            </div>
+          </div>
+
+          <!-- Caixa de Feedback da Resposta -->
+          <div id="feedback-box" class="hidden mt-4 p-3.5 rounded-xl text-xs sm:text-sm leading-relaxed border transition-all duration-200">
+            <!-- Renderizado via JS -->
+          </div>
+
+        </div>
+
+        <!-- Barra de Botões -->
+        <div class="p-3 sm:p-4 border-t border-slate-100 bg-slate-50 flex justify-between items-center gap-2">
+          <button id="prev-btn" onclick="prevQuestion()" class="px-4 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-lg text-xs sm:text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+            Previous
+          </button>
+          
+          <button id="check-btn" onclick="checkAnswer()" class="px-5 py-2.5 bg-brand-dark hover:bg-brand-light text-white font-bold rounded-lg text-xs sm:text-sm shadow-md transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+            Check
+          </button>
+          
+          <button id="next-btn" onclick="nextQuestion()" class="px-4 py-2.5 bg-brand-dark hover:bg-brand-light text-white font-bold rounded-lg text-xs sm:text-sm shadow-md transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+            Next
+          </button>
+        </div>
+
+      </section>
+
+      <!-- PÁGINA DO RELATÓRIO FINAL -->
+      <section id="report-screen" class="hidden flex flex-col">
+        
+        <div class="bg-slate-50 p-4 border-b border-slate-100 text-center">
+          <h2 class="text-xl sm:text-2xl font-bold text-brand-dark">Quiz Concluído! 🎉</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">Confira seu relatório de desempenho em Conditionals</p>
+        </div>
+
+        <div class="h-[54vh] sm:h-[55vh] overflow-y-auto p-4 sm:p-6 space-y-5 custom-scrollbar">
+          
+          <!-- Cards de Métricas -->
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-xl text-center">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-emerald-600" id="score-correct">0</span>
+              <span class="text-xs sm:text-sm font-semibold text-emerald-800">Acertos (<span id="percent-correct">0%</span>)</span>
+            </div>
+            <div class="bg-rose-50 border border-rose-200 p-4 rounded-xl text-center">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-rose-600" id="score-incorrect">0</span>
+              <span class="text-xs sm:text-sm font-semibold text-rose-800">Erros (<span id="percent-incorrect">0%</span>)</span>
+            </div>
+          </div>
+
+          <!-- Recomendação de Revisão -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-3">
+            <h3 class="font-bold text-brand-dark text-sm sm:text-base border-b pb-2">
+              📌 Tópicos para Revisar
+            </h3>
+            <div id="feedback-topics-list" class="space-y-2 text-xs sm:text-sm">
+              <!-- Preenchido via JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <div class="p-4 border-t border-slate-100 bg-slate-50 flex justify-center">
+          <button onclick="restartQuiz()" class="w-full sm:w-auto px-8 py-3 bg-brand-dark hover:bg-brand-light text-white font-bold rounded-xl shadow-md transition-all duration-200 text-sm sm:text-base">
+            Refazer Quiz / Revisar 🔄
+          </button>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- MODAL / DRAWER NAVEGADOR DE QUESTÕES -->
+  <div id="nav-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-3">
+    <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl flex flex-col overflow-hidden max-h-[85vh]">
+      <div class="p-4 bg-brand-dark text-white flex justify-between items-center">
+        <h3 class="font-bold text-sm sm:text-base">📋 Navegador de Questões</h3>
+        <button onclick="toggleNavModal()" class="text-white hover:text-slate-200 text-xl font-bold px-2">&times;</button>
+      </div>
+      <div id="nav-grid-container" class="p-4 overflow-y-auto space-y-4 text-xs sm:text-sm custom-scrollbar">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+      <div class="p-3 bg-slate-50 border-t text-center">
+        <button onclick="toggleNavModal()" class="px-5 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold rounded-lg text-xs">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BANCO DE DADOS & LÓGICA EM JAVASCRIPT -->
+  <script>
+    // Banco de Perguntas (30 questões divididas em tópicos estratégicos)
+    const rawQuestions = [
+      // --- FIRST CONDITIONAL (10 Questoes) ---
+      {
+        topic: "First Conditional (Vírgula & Estrutura)",
+        context: "<strong>Leo:</strong> Are you going to the beach tomorrow?<br><strong>Mia:</strong> _____ we will stay home and order pizza.",
+        options: [
+          { text: "If it rains,", correct: true },
+          { text: "If it rains", correct: false },
+          { text: "If it will rain,", correct: false },
+          { text: "If it rained,", correct: false },
+          { text: "If it rain,", correct: false }
+        ],
+        explanation: "Na First Conditional, a oração 'If' fica no Simple Present ('rains'). Como a oração 'If' começa a frase, DEVE ser seguida de vírgula."
+      },
+      {
+        topic: "First Conditional (Sem Vírgula)",
+        context: "<strong>Lucas:</strong> Don't worry about the presentation.<br><strong>Sophia:</strong> I will feel much better _____.",
+        options: [
+          { text: "if you help me with the slides.", correct: true },
+          { text: "if you help me with the slides", correct: false },
+          { text: ", if you help me with the slides.", correct: false },
+          { text: "if you will help me with the slides.", correct: false },
+          { text: ", if you helped me with the slides.", correct: false }
+        ],
+        explanation: "Quando a oração principal ('I will feel...') vem primeiro, NÃO usaremos vírgula antes da 'If-clause'."
+      },
+      {
+        topic: "First Conditional (Estrutura Verbal)",
+        context: "<strong>Teacher:</strong> Make sure you complete your tasks.<br><strong>Student:</strong> If I finish my homework early, _____ you?",
+        options: [
+          { text: "will I call", correct: false },
+          { text: "I will call", correct: true },
+          { text: "I call", correct: false },
+          { text: "I would call", correct: false },
+          { text: "I called", correct: false }
+        ],
+        explanation: "A oração principal no resultado afirmativo da First Conditional utiliza 'will + verbo base' (I will call)."
+      },
+      {
+        topic: "First Conditional (Ordem Invertida)",
+        context: "<strong>Mark:</strong> What's the plan for tonight?<br><strong>Sarah:</strong> We will miss the start of the movie _____.",
+        options: [
+          { text: "if we don't leave right now.", correct: true },
+          { text: ", if we don't leave right now.", correct: false },
+          { text: "if we won't leave right now.", correct: false },
+          { text: "if we didn't leave right now.", correct: false },
+          { text: ", if we didn't leave right now.", correct: false }
+        ],
+        explanation: "Na oração 'If' no presente usaremos 'don't leave'. Como a oração do 'If' está no final da frase, não há vírgula."
+      },
+      {
+        topic: "First Conditional (Forma Negativa)",
+        context: "<strong>Mom:</strong> Eat your breakfast, Toby!<br><strong>Toby:</strong> If I don't eat now, _____ hungry at school.",
+        options: [
+          { text: "I will be", correct: true },
+          { text: ", I will be", correct: false }, // A vírgula precisa estar na oração 'If', não no meio do resultado
+          { text: "I would be", correct: false },
+          { text: "I am", correct: false },
+          { text: "I won't be", correct: false }
+        ],
+        explanation: "A oração 'If I don't eat now,' já contém a vírgula necessária. A frase principal completa o sentido com 'I will be'."
+      },
+      {
+        topic: "First Conditional (Uso da Vírgula)",
+        context: "Qual das opções a seguir apresenta a PONTUAÇÃO e GRAMÁTICA corretas?<br><br><strong>Emma:</strong> What happens if the train is delayed?<br><strong>Noah:</strong> _____",
+        options: [
+          { text: "If the train is delayed, we will take a taxi.", correct: true },
+          { text: "If the train is delayed we will take a taxi.", correct: false },
+          { text: "We will take a taxi, if the train is delayed.", correct: false },
+          { text: "If the train will be delayed, we take a taxi.", correct: false },
+          { text: "If the train is delayed, we would take a taxi.", correct: false }
+        ],
+        explanation: "Se o 'If' inicia a frase, a vírgula é OBRIGATÓRIA após essa primeira oração."
+      },
+      {
+        topic: "First Conditional (Simple Present x Will)",
+        context: "<strong>David:</strong> Is Carlos coming to the match?<br><strong>Alex:</strong> If Carlos _____ time, he will meet us at the stadium.",
+        options: [
+          { text: "has", correct: true },
+          { text: "will have", correct: false },
+          { text: "had", correct: false },
+          { text: "have", correct: false },
+          { text: "would have", correct: false }
+        ],
+        explanation: "Não se utiliza 'will' dentro da oração com 'If'. Deve-se usar o Simple Present ('has' para a 3ª pessoa do singular)."
+      },
+      {
+        topic: "First Conditional (Sem Vírgula)",
+        context: "<strong>Jake:</strong> Will you buy that new smartphone?<br><strong>Chloe:</strong> I will buy it _____.",
+        options: [
+          { text: "if the price drops next week.", correct: true },
+          { text: ", if the price drops next week.", correct: false },
+          { text: "if the price will drop next week.", correct: false },
+          { text: ", if the price will drop next week.", correct: false },
+          { text: "if the price dropped next week.", correct: false }
+        ],
+        explanation: "A frase principal vem antes da 'If-clause', descartando a necessidade da vírgula."
+      },
+      {
+        topic: "First Conditional (Conselho/Regra)",
+        context: "<strong>Teacher:</strong> What is the golden rule for exams?<br><strong>Student:</strong> If you read the questions carefully, _____ fewer mistakes.",
+        options: [
+          { text: "you will make", correct: true },
+          { text: "you would make", correct: false },
+          { text: ", you will make", correct: false },
+          { text: "you make", correct: false },
+          { text: "you had made", correct: false }
+        ],
+        explanation: "If + Simple Present (read), + resultado com Will (you will make)."
+      },
+      {
+        topic: "First Conditional (Imperativo / Modal)",
+        context: "<strong>Paul:</strong> I feel a bit dizzy.<br><strong>Nurse:</strong> _____ sit down and rest for a minute.",
+        options: [
+          { text: "If you feel dizzy,", correct: true },
+          { text: "If you feel dizzy", correct: false },
+          { text: "If you will feel dizzy,", correct: false },
+          { text: "If you felt dizzy,", correct: false },
+          { text: "If you feel dizzy;", correct: false }
+        ],
+        explanation: "A oração com 'If' no início de frases instrucionais exige a vírgula antes da instrução/resultado."
+      },
+
+      // --- SECOND CONDITIONAL (10 Questoes) ---
+      {
+        topic: "Second Conditional (Estrutura e Vírgula)",
+        context: "<strong>Gabriel:</strong> What would you do with a million dollars?<br><strong>Julia:</strong> _____ I would buy a house near the beach.",
+        options: [
+          { text: "If I won the lottery,", correct: true },
+          { text: "If I won the lottery", correct: false },
+          { text: "If I win the lottery,", correct: false },
+          { text: "If I had won the lottery,", correct: false },
+          { text: "If I would win the lottery,", correct: false }
+        ],
+        explanation: "Na Second Conditional (hipótese presente/futura), usa-se 'If + Simple Past' ('won'). Como abre a frase, requer vírgula."
+      },
+      {
+        topic: "Second Conditional (Sem Vírgula)",
+        context: "<strong>Liam:</strong> Would you move to Canada?<br><strong>Ethan:</strong> I would move to Canada _____.",
+        options: [
+          { text: "if I spoke fluent English.", correct: true },
+          { text: ", if I spoke fluent English.", correct: false },
+          { text: "if I speak fluent English.", correct: false },
+          { text: ", if I would speak fluent English.", correct: false },
+          { text: "if I had spoken fluent English.", correct: false }
+        ],
+        explanation: "A oração do resultado com 'would' veio primeiro, dispensando a vírgula antes do 'if'."
+      },
+      {
+        topic: "Second Conditional (Uso do WERE)",
+        context: "<strong>Bruno:</strong> Should I call her right now?<br><strong>Mateus:</strong> If I _____ you, I would wait until tomorrow.",
+        options: [
+          { text: "were", correct: true },
+          { text: "was", correct: false }, // Em contextos acadêmicos/exames de gramática usa-se obrigatoriamente 'were'
+          { text: "am", correct: false },
+          { text: "had been", correct: false },
+          { text: "would be", correct: false }
+        ],
+        explanation: "Na gramática normativa de inglês (Second Conditional), a forma do verbo To Be no passado para conselhos é 'WERE' para todas as pessoas (If I were you...)."
+      },
+      {
+        topic: "Second Conditional (Inversão Sem Vírgula)",
+        context: "<strong>Olivia:</strong> Why doesn't Sam join the basketball team?<br><strong>Hannah:</strong> He would join the team _____.",
+        options: [
+          { text: "if he were taller.", correct: true },
+          { text: ", if he were taller.", correct: false },
+          { text: "if he was taller.", correct: false },
+          { text: ", if he would be taller.", correct: false },
+          { text: "if he had been taller.", correct: false }
+        ],
+        explanation: "Sem vírgula quando o resultado com 'would' precede a 'If-clause'. Mantém-se o 'were' formal."
+      },
+      {
+        topic: "Second Conditional (Past Simple x Would)",
+        context: "<strong>Victor:</strong> Does Maria travel much?<br><strong>Daniel:</strong> No, but if she _____ more free time, she would travel around Europe.",
+        options: [
+          { text: "had", correct: true },
+          { text: "has", correct: false },
+          { text: "would have", correct: false },
+          { text: "had had", correct: false },
+          { text: "have", correct: false }
+        ],
+        explanation: "A oração condicional imaginária exige o verbo no Simple Past ('had')."
+      },
+      {
+        topic: "Second Conditional (Pontuação Correta)",
+        context: "Qual das alternativas abaixo aplica CORRETAMENTE a pontuação e a estrutura da Second Conditional?<br><br><strong>Rachel:</strong> _____",
+        options: [
+          { text: "If we lived in London, we would visit the British Museum often.", correct: true },
+          { text: "If we lived in London we would visit the British Museum often.", correct: false },
+          { text: "We would visit the British Museum often, if we lived in London.", correct: false },
+          { text: "If we would live in London, we visited the British Museum often.", correct: false },
+          { text: "If we had lived in London, we would visit the British Museum often.", correct: false }
+        ],
+        explanation: "Início com 'If' exige vírgula após a oração. Estrutura: If + Past Simple (lived), resultado com Would (would visit)."
+      },
+      {
+        topic: "Second Conditional (Pergunta / Resposta)",
+        context: "<strong>Carla:</strong> What would you do if you saw a bear in the woods?<br><strong>Felipe:</strong> If I saw a bear, _____ up a tree!",
+        options: [
+          { text: "I would climb", correct: true },
+          { text: ", I would climb", correct: false },
+          { text: "I will climb", correct: false },
+          { text: "I climbed", correct: false },
+          { text: "I had climbed", correct: false }
+        ],
+        explanation: "A vírgula já consta após a 'If-clause' no enunciado (If I saw a bear,). O resultado é completado com 'I would climb'."
+      },
+      {
+        topic: "Second Conditional (Sem Vírgula)",
+        context: "<strong>Isabela:</strong> Why don't you buy that guitar?<br><strong>Rodrigo:</strong> I would buy that guitar _____.",
+        options: [
+          { text: "if I had enough money.", correct: true },
+          { text: ", if I had enough money.", correct: false },
+          { text: "if I have enough money.", correct: false },
+          { text: "if I would have enough money.", correct: false },
+          { text: ", if I have enough money.", correct: false }
+        ],
+        explanation: "Sentença principal no início = Ausência de vírgula."
+      },
+      {
+        topic: "Second Conditional (Negação)",
+        context: "<strong>Kevin:</strong> Does Mr. Andrews give many tests?<br><strong>Laura:</strong> Yes. If he didn't give so many tests, the students _____ less stressed.",
+        options: [
+          { text: "would be", correct: true },
+          { text: "will be", correct: false },
+          { text: "are", correct: false },
+          { text: "would have been", correct: false },
+          { text: "were", correct: false }
+        ],
+        explanation: "If + Past Simple Negativo (didn't give), + resultado hipotético com Would (would be)."
+      },
+      {
+        topic: "Second Conditional (Conselho Hipotético)",
+        context: "<strong>Pedro:</strong> I have a headache.<br><strong>Alice:</strong> _____, I would take an aspirin and rest.",
+        options: [
+          { text: "If I were you,", correct: true },
+          { text: "If I was you,", correct: false },
+          { text: "If I am you,", correct: false },
+          { text: "If I were you", correct: false },
+          { text: "If I would be you,", correct: false }
+        ],
+        explanation: "Expressão fixa de conselho 'If I were you,' acompanhada da obrigatória vírgula antes do resultado."
+      },
+
+      // --- THIRD CONDITIONAL (10 Questoes) ---
+      {
+        topic: "Third Conditional (Arrependimento & Vírgula)",
+        context: "<strong>Tom:</strong> Did you catch the early train yesterday?<br><strong>Ben:</strong> No. _____ I wouldn't have been late for work.",
+        options: [
+          { text: "If I had woken up on time,", correct: true },
+          { text: "If I had woken up on time", correct: false },
+          { text: "If I woke up on time,", correct: false },
+          { text: "If I have woken up on time,", correct: false },
+          { text: "If I would have woken up on time,", correct: false }
+        ],
+        explanation: "Third Conditional (hipótese no passado): 'If + Past Perfect (had woken)'. Como está no início da frase, usa-se vírgula."
+      },
+      {
+        topic: "Third Conditional (Sem Vírgula)",
+        context: "<strong>Amanda:</strong> Why didn't you come to my party?<br><strong>Beatriz:</strong> I would have gone to your party _____.",
+        options: [
+          { text: "if you had invited me.", correct: true },
+          { text: ", if you had invited me.", correct: false },
+          { text: "if you invited me.", correct: false },
+          { text: "if you would have invited me.", correct: false },
+          { text: ", if you had invite me.", correct: false }
+        ],
+        explanation: "O resultado no passado ('I would have gone...') vem no início, anulando o uso da vírgula antes do 'if'."
+      },
+      {
+        topic: "Third Conditional (Estrutura do Resultado)",
+        context: "<strong>Instructor:</strong> Did he pass his driving test?<br><strong>Student:</strong> Yes! If he had made one more mistake, he _____ the test.",
+        options: [
+          { text: "would have failed", correct: true },
+          { text: "would fail", correct: false },
+          { text: "will fail", correct: false },
+          { text: "failed", correct: false },
+          { text: "had failed", correct: false }
+        ],
+        explanation: "O resultado de uma situação hipotética no passado é 'Would + Have + Participio do verbo (failed)'."
+      },
+      {
+        topic: "Third Conditional (Past Perfect na If-clause)",
+        context: "<strong>Lucas:</strong> The match was canceled due to rain.<br><strong>Enzo:</strong> They would have played the game _____.",
+        options: [
+          { text: "if the weather had been better.", correct: true },
+          { text: ", if the weather had been better.", correct: false },
+          { text: "if the weather was better.", correct: false },
+          { text: "if the weather would have been better.", correct: false },
+          { text: ", if the weather were better.", correct: false }
+        ],
+        explanation: "Sem vírgula na oração inversa. A oração 'If' exige o Past Perfect ('had been')."
+      },
+      {
+        topic: "Third Conditional (Forma Negativa)",
+        context: "<strong>Grace:</strong> I got a huge fine for speeding.<br><strong>Oliver:</strong> If you hadn't driven so fast, _____ a fine.",
+        options: [
+          { text: "you wouldn't have received", correct: true },
+          { text: ", you wouldn't have received", correct: false },
+          { text: "you wouldn't receive", correct: false },
+          { text: "you didn't receive", correct: false },
+          { text: "you wouldn't had received", correct: false }
+        ],
+        explanation: "A vírgula já se encontra após o 'fast,'. Completa-se com o resultado no passado irreagível: 'wouldn't have received'."
+      },
+      {
+        topic: "Third Conditional (Pontuação Correta)",
+        context: "Qual opção apresenta a pontuação e gramática PERFEITAS para a Third Conditional?<br><br><strong>Teacher:</strong> _____",
+        options: [
+          { text: "If she had studied harder, she would have passed the exam.", correct: true },
+          { text: "If she had studied harder she would have passed the exam.", correct: false },
+          { text: "She would have passed the exam, if she had studied harder.", correct: false },
+          { text: "If she would have studied harder, she had passed the exam.", correct: false },
+          { text: "If she studied harder, she would have passed the exam.", correct: false }
+        ],
+        explanation: "If-clause no início = necessidade obrigatória de vírgula antes de 'she would have passed'."
+      },
+      {
+        topic: "Third Conditional (Ação Incompleta)",
+        context: "<strong>Nathalia:</strong> I lost all my files when the computer crashed.<br><strong>Thiago:</strong> You wouldn't have lost your files _____.",
+        options: [
+          { text: "if you had saved them on a flash drive.", correct: true },
+          { text: ", if you had saved them on a flash drive.", correct: false },
+          { text: "if you saved them on a flash drive.", correct: false },
+          { text: "if you would have saved them on a flash drive.", correct: false },
+          { text: ", if you had save them on a flash drive.", correct: false }
+        ],
+        explanation: "Estrutura sem vírgula pois a oração do resultado com 'wouldn't have lost' inicia a frase."
+      },
+      {
+        topic: "Third Conditional (Arrependimento)",
+        context: "<strong>Clara:</strong> I feel sick after eating all that cake.<br><strong>Vanessa:</strong> If you hadn't eaten the whole cake, _____ sick.",
+        options: [
+          { text: "you wouldn't have felt", correct: true },
+          { text: "you wouldn't feel", correct: false },
+          { text: ", you wouldn't have felt", correct: false },
+          { text: "you didn't feel", correct: false },
+          { text: "you hadn't felt", correct: false }
+        ],
+        explanation: "If + Past Perfect negativo (hadn't eaten), + resultado no passado (wouldn't have felt)."
+      },
+      {
+        topic: "Third Conditional (Análise de Erro)",
+        context: "<strong>Dan:</strong> Why did we take this path? We are totally lost!<br><strong>Leo:</strong> We wouldn't have gotten lost _____.",
+        options: [
+          { text: "if we had followed the map GPS.", correct: true },
+          { text: ", if we had followed the map GPS.", correct: false },
+          { text: "if we followed the map GPS.", correct: false },
+          { text: "if we would have followed the map GPS.", correct: false },
+          { text: ", if we would follow the map GPS.", correct: false }
+        ],
+        explanation: "A oração principal iniciou a fala de Leo. Portanto, não se coloca vírgula antes da 'If-clause'."
+      },
+      {
+        topic: "Third Conditional (Oportunidade Perdida)",
+        context: "<strong>Sonia:</strong> Did you talk to the company CEO at the event?<br><strong>Raquel:</strong> _____ I would have spoken to him.",
+        options: [
+          { text: "If I had seen him,", correct: true },
+          { text: "If I had seen him", correct: false },
+          { text: "If I saw him,", correct: false },
+          { text: "If I would have seen him,", correct: false },
+          { text: "If I have seen him,", correct: false }
+        ],
+        explanation: "Oração com 'If' no início exigindo 'had + participio (seen)' e acompanhada de vírgula ao final da oração condicional."
+      }
+    ];
+
+    // Estado da Aplicação
+    let questions = [];
+    let currentIndex = 0;
+    let userAnswers = {}; // { questionIndex: { selectedOptionIndex, isChecked } }
+
+    // Algoritmo Fisher-Yates para embaralhar opções
+    function shuffleArray(array) {
+      const arr = [...array];
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    // Inicialização do Quiz
+    function initQuizData() {
+      questions = rawQuestions.map(q => {
+        const shuffledOptions = shuffleArray(q.options);
+        return {
+          ...q,
+          options: shuffledOptions
+        };
+      });
+      userAnswers = {};
+      currentIndex = 0;
+    }
+
+    function startQuiz() {
+      initQuizData();
+      document.getElementById('study-screen').classList.add('hidden');
+      document.getElementById('report-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+      renderQuestion();
+    }
+
+    // Renderiza a pergunta atual
+    function renderQuestion() {
+      const q = questions[currentIndex];
+      
+      // Atualizar Cabeçalho e Barra de Progresso
+      document.getElementById('topic-badge').textContent = q.topic;
+      document.getElementById('question-counter').textContent = `${currentIndex + 1} / ${questions.length}`;
+      const progressPercent = ((currentIndex + 1) / questions.length) * 100;
+      document.getElementById('progress-bar').style.width = `${progressPercent}%`;
+
+      // Texto da Pergunta
+      document.getElementById('question-text').innerHTML = `
+        <div class="text-brand-dark font-bold text-xs uppercase tracking-wider mb-1">Question ${currentIndex + 1}</div>
+        <div>${q.context}</div>
+      `;
+
+      // Renderizar Opções
+      const optionsContainer = document.getElementById('options-container');
+      optionsContainer.innerHTML = '';
+
+      const state = userAnswers[currentIndex] || { selectedOptionIndex: null, isChecked: false };
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = `w-full text-left p-3.5 rounded-xl border text-xs sm:text-sm font-medium transition-all duration-200 flex items-center justify-between gap-2 `;
+
+        if (state.isChecked) {
+          // Estado de Verificação (Resposta final)
+          if (opt.correct) {
+            btn.className += 'bg-emerald-50 border-emerald-500 text-emerald-900 font-bold';
+          } else if (state.selectedOptionIndex === idx) {
+            btn.className += 'bg-rose-50 border-rose-500 text-rose-900 font-bold';
+          } else {
+            btn.className += 'bg-slate-50 border-slate-200 text-slate-400 opacity-60';
+          }
+        } else {
+          // Estado Normal de Seleção
+          if (state.selectedOptionIndex === idx) {
+            btn.className += 'bg-brand-dark/10 border-brand-dark text-brand-dark font-bold shadow-sm';
+          } else {
+            btn.className += 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300';
+          }
+        }
+
+        btn.onclick = () => selectOption(idx);
+        btn.disabled = state.isChecked;
+
+        const letter = String.fromCharCode(65 + idx); // A, B, C, D, E
+        btn.innerHTML = `
+          <span><strong class="mr-2 text-brand-dark">${letter})</strong> ${escapeHtml(opt.text)}</span>
+          ${state.isChecked && opt.correct ? '<span>✅</span>' : ''}
+          ${state.isChecked && state.selectedOptionIndex === idx && !opt.correct ? '<span>❌</span>' : ''}
+        `;
+
+        optionsContainer.appendChild(btn);
+      });
+
+      // Renderizar Feedback
+      const feedbackBox = document.getElementById('feedback-box');
+      if (state.isChecked) {
+        feedbackBox.classList.remove('hidden');
+        const selectedOpt = q.options[state.selectedOptionIndex];
+        
+        if (selectedOpt.correct) {
+          feedbackBox.className = "mt-4 p-3.5 rounded-xl text-xs sm:text-sm leading-relaxed bg-emerald-50 border border-emerald-300 text-emerald-950";
+          feedbackBox.innerHTML = `<strong>🎉 Resposta Correta!</strong><br>${q.explanation}`;
+        } else {
+          feedbackBox.className = "mt-4 p-3.5 rounded-xl text-xs sm:text-sm leading-relaxed bg-rose-50 border border-rose-300 text-rose-950";
+          feedbackBox.innerHTML = `<strong>❌ Resposta Incorreta.</strong><br>${q.explanation}`;
+        }
+      } else {
+        feedbackBox.classList.add('hidden');
+      }
+
+      // Atualizar estado dos botões
+      document.getElementById('prev-btn').disabled = (currentIndex === 0);
+      document.getElementById('check-btn').disabled = (state.selectedOptionIndex === null || state.isChecked);
+      
+      const nextBtn = document.getElementById('next-btn');
+      if (currentIndex === questions.length - 1) {
+        nextBtn.textContent = 'Finish Quiz 🏁';
+      } else {
+        nextBtn.textContent = 'Next';
+      }
+    }
+
+    function selectOption(index) {
+      if (!userAnswers[currentIndex]) {
+        userAnswers[currentIndex] = { selectedOptionIndex: null, isChecked: false };
+      }
+      userAnswers[currentIndex].selectedOptionIndex = index;
+      renderQuestion();
+    }
+
+    function checkAnswer() {
+      if (!userAnswers[currentIndex] || userAnswers[currentIndex].selectedOptionIndex === null) return;
+      userAnswers[currentIndex].isChecked = true;
+      renderQuestion();
+    }
+
+    function nextQuestion() {
+      if (currentIndex < questions.length - 1) {
+        currentIndex++;
+        renderQuestion();
+      } else {
+        finishQuiz();
+      }
+    }
+
+    function prevQuestion() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderQuestion();
+      }
+    }
+
+    // Modal Navegador de Questões
+    function toggleNavModal() {
+      const modal = document.getElementById('nav-modal');
+      if (modal.classList.contains('hidden')) {
+        buildNavGrid();
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function buildNavGrid() {
+      const container = document.getElementById('nav-grid-container');
+      container.innerHTML = '';
+
+      // Agrupar questões por Tópico
+      const topics = {};
+      questions.forEach((q, idx) => {
+        if (!topics[q.topic]) topics[q.topic] = [];
+        topics[q.topic].push(idx);
+      });
+
+      for (const [topicName, qIndexes] of Object.entries(topics)) {
+        const topicBox = document.createElement('div');
+        topicBox.className = 'space-y-2';
+
+        const topicTitle = document.createElement('h4');
+        topicTitle.className = 'font-bold text-slate-700 text-xs sm:text-sm border-b pb-1';
+        topicTitle.textContent = topicName;
+        topicBox.appendChild(topicTitle);
+
+        const grid = document.createElement('div');
+        grid.className = 'grid grid-cols-5 gap-2';
+
+        qIndexes.forEach(qIdx => {
+          const btn = document.createElement('button');
+          const ans = userAnswers[qIdx];
+          
+          let btnStyle = "bg-slate-100 border-slate-300 text-slate-700 hover:bg-slate-200";
+          if (qIdx === currentIndex) {
+            btnStyle = "bg-brand-dark text-white font-bold ring-2 ring-brand-accent";
+          } else if (ans && ans.isChecked) {
+            const isCorrect = questions[qIdx].options[ans.selectedOptionIndex].correct;
+            btnStyle = isCorrect ? "bg-emerald-500 text-white font-bold" : "bg-rose-500 text-white font-bold";
+          } else if (ans && ans.selectedOptionIndex !== null) {
+            btnStyle = "bg-amber-400 text-amber-950 font-bold";
+          }
+
+          btn.className = `p-2 rounded-lg text-xs border text-center transition-all ${btnStyle}`;
+          btn.textContent = `Q${qIdx + 1}`;
+          btn.onclick = () => {
+            currentIndex = qIdx;
+            renderQuestion();
+            toggleNavModal();
+          };
+          grid.appendChild(btn);
+        });
+
+        topicBox.appendChild(grid);
+        container.appendChild(topicBox);
+      }
+    }
+
+    // Relatório Final
+    function finishQuiz() {
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('report-screen').classList.remove('hidden');
+
+      let correctCount = 0;
+      let incorrectCount = 0;
+      const topicErrors = {};
+
+      questions.forEach((q, idx) => {
+        const state = userAnswers[idx];
+        if (state && state.selectedOptionIndex !== null) {
+          const isCorrect = q.options[state.selectedOptionIndex].correct;
+          if (isCorrect) {
+            correctCount++;
+          } else {
+            incorrectCount++;
+            topicErrors[q.topic] = (topicErrors[q.topic] || 0) + 1;
+          }
+        } else {
+          incorrectCount++;
+          topicErrors[q.topic] = (topicErrors[q.topic] || 0) + 1;
+        }
+      });
+
+      const total = questions.length;
+      const percentCorrect = Math.round((correctCount / total) * 100);
+      const percentIncorrect = Math.round((incorrectCount / total) * 100);
+
+      document.getElementById('score-correct').textContent = correctCount;
+      document.getElementById('percent-correct').textContent = `${percentCorrect}%`;
+      document.getElementById('score-incorrect').textContent = incorrectCount;
+      document.getElementById('percent-incorrect').textContent = `${percentIncorrect}%`;
+
+      // Montar Feedback de Revisão por Tópicos
+      const feedbackList = document.getElementById('feedback-topics-list');
+      feedbackList.innerHTML = '';
+
+      if (incorrectCount === 0) {
+        feedbackList.innerHTML = `
+          <div class="p-3 bg-emerald-50 text-emerald-800 rounded-lg font-medium border border-emerald-200">
+            🌟 <strong>Perfeito!</strong> Você dominou todas as estruturas de Conditionals e o uso correto das vírgulas!
+          </div>
+        `;
+      } else {
+        let html = `<p class="text-slate-600 mb-2">Com base no seu desempenho, sugerimos revisar as estruturas dos tópicos abaixo:</p><ul class="space-y-1.5">`;
+        
+        for (const [topic, errorCount] of Object.entries(topicErrors)) {
+          html += `
+            <li class="flex items-center justify-between p-2.5 bg-white border rounded-lg text-slate-800 font-medium">
+              <span>📌 <strong>${topic}</strong></span>
+              <span class="text-xs bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full font-bold">${errorCount} erro(s)</span>
+            </li>
+          `;
+        }
+        html += `</ul>`;
+        feedbackList.innerHTML = html;
+      }
+    }
+
+    function restartQuiz() {
+      document.getElementById('report-screen').classList.add('hidden');
+      document.getElementById('study-screen').classList.remove('hidden');
+    }
+
+    function escapeHtml(text) {
+      return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+  </script>
+</body>
+</html>
